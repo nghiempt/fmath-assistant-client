@@ -10,9 +10,31 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 const font = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  // metadataBase: new URL('https://chat.vercel.ai'),
   title: 'FMath Assistant',
-  description: 'FMath Assistant',
+  description: 'Hệ thống Assistant hỗ trợ học toán thông qua các tài liệu và bài tập.',
+  openGraph: {
+    title: "FMath Assistant",
+    description:
+      "Hệ thống Assistant hỗ trợ học toán thông qua các tài liệu và bài tập.",
+    url: "https://fmath.edu.vn",
+    images: [
+      {
+        url: "https://www.thoughtco.com/thmb/cl3_jtVnwKDliY69F4e85eob18g=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-939529808-7e57fa6be182490c856eaafd95b95a57.jpg",
+        width: 1200,
+        height: 630,
+        alt: "FMath Assistant",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "FMath Assistant",
+    description:
+      "Hệ thống Assistant hỗ trợ học toán thông qua các tài liệu và bài tập.",
+    images: [
+      "https://www.thoughtco.com/thmb/cl3_jtVnwKDliY69F4e85eob18g=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-939529808-7e57fa6be182490c856eaafd95b95a57.jpg",
+    ],
+  },
 };
 
 export const viewport = {
